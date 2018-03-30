@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- using meta viewport for responsive website design -->
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <title>Led Control</title>
+  <!-- linking style.css file -->
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<!-- setting background image -->
+
+<body background='Images/back4.jpg' width=1024px>
+  <!-- div block contains the header, underline block element and two buttons -->
+  <div>
+    <h1>Led Control</h1>
+    <center><span class="line"></span></center>
+    <!-- On and Off Button with styles-->
+    <button class="btn On" onclick="myfunc('Led On')">On</button>
+    <button class="btn Off" onclick="myfunc('Led Off')">Off</button>
+  </div>
+  <!-- this div contains the message block which tell current led status -->
+  <div>
+    <p style="font-family:monospace;text-transform:uppercase" id='message'>Led Off</p>
+  </div>
+  <!--  this div contains the image -->
+  <div>
+    <!-- displaying off image of bulb -->
+    <img id="image" src="Images/off1.png" title="LED" style="padding:1px" width="200" height=auto>
+  </div>
+  <!-- div contains copyright claim -->
+  <div style="color:#fff;text-align:right;font-size=10px;padding-top:80px">
+    <p color=#fff>Copyright @ Subham_Kumar</p>
+  </div>
+  <!-- javascript function myfunc() called whenever a button is pressed -->
+  <script>
+    function myfunc(x) {
+      if (x == "Led On") {
+        //Printing message and updating image of led whenever on led button is pressed
+        document.getElementById('message').innerHTML = ('Led On');
+        document.getElementById('image').src = 'Images/on1.png';
+      } else {
+        //Printing message and updating image of led whenever off led button is pressed
+        document.getElementById('message').innerHTML = ('Led Off');
+        document.getElementById('image').src = 'Images/off1.png';
+      }
+    }
+  </script>
+  <!-- end -->
+</body>
+
+</html>

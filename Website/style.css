@@ -1,0 +1,94 @@
+/*/////////////////////////////////////Eliminating browser margin and padding*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*///////////////////////////////////////////////////////////Bulb image style*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*///////////////////////////////////////////////////Led Control header style*/
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  color: white;
+  padding-bottom: 2px;
+  margin-top: 20px;
+  text-decoration-color: rgb(59, 137, 200);
+}
+
+/*////////////////////////////////////////////////////////////Underline Style*/
+
+.line {
+  content="";
+  display: block;
+  width: 150px;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 60px;
+  padding-left: center;
+}
+
+/*////////////////////////////////////////////////////////Led Message Printed*/
+
+#message {
+  color: rgb(59, 137, 200);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/*//////////////////////////////////////////////Button box,shadow,hover style*/
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*/////////////////////////On Button Style*/
+
+.On {
+  background-color: #1fd457;
+  margin-right: 15px;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+}
+
+/*///////////////////On Button Hover Style*/
+
+.On:hover {
+  background-color: #13953b;
+  box-shadow: 0px 3px 8px #fff;
+}
+
+/*/////////////////////////Off Button Style*/
+
+.Off {
+  background-color: #f62114;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+}
+
+/*///////////////////Off Button Hover Style*/
+
+.Off:hover {
+  background-color: #a1150c;
+  box-shadow: 0px 3px 8px #fff;
+}
+
+/*//////////////////////////////////////////////all block in div is in center*/
+
+div {
+  text-align: center;
+  padding-top: 15px;
+}
